@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block head_title %} 
+	Welcome to
+{%endblock%}
+
+{% block styles %} 
+	
+	/* .jumbotron {color:#54a;} */
+{% endblock %}
+	
+{% block jquery %}
+	//alert('Welcome');
+{% endblock %}
+
+{# Comment here #}
+
+
+{% block jumbotron %}
+	<div class="container">
+   <div class="jumbotron">
+        <h2>Hello {{ username_is }}</h2>
+
+        <p>This example is a quick exercise to illustrate how the default, static and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device.</p>
+        <p>To see the difference between static and fixed top navbars, just scroll.</p>
+        <p>
+          <a class="btn btn-lg btn-primary" href="../../components/#navbar" role="button">View navbar docs &raquo;</a>
+        </p>
+      </div>
+     </div>
+{% endblock %}
+
+{% block content %}
+<!-- Main component for a primary marketing message or call to action -->
+   
+
+      <div class="row">
+	     
+	      	<ul>
+	      	{% for product in products %}
+	      		<div class="col-sm-3">
+
+	      			<div class="thumbnail">
+
+	      			{% if product.productimage_set.all 	%}
+	      			
+	      				{% for item in product.productimage_set.all %}
+						    {% if item.featured %}
+			      				<img class='image-responsive' src='{{ MEDIA_URL}}{{item.image}}' />
+			      			{% endif %}
+			      		{% endfor %}
+
+	      			{% else %}
+	      				<img class='image-responsive' src='{% static "img/placeholder.svg" %}' />
+
+	      			{% endif %}
+
+	      			 <div class="caption">
+				        <a href='{% url "single_product" product.slug %}'><h3>{{product.title}}</h3></a>
+				        <p> {{product.description | truncatewords:15}}</p>
+				        <p><a href='{% url "single_product" product.slug %}' class="btn btn-primary" role="button">View</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+				      </div>
+				    </div>
+
+	      			
+	      			
+	      		</div>
+	      		{% cycle "" "" "" "</div><br/><hr/><div class='row'>" %}
+
+	      	{% endfor %}
+	      	</ul>
+
+	  </div>
+{% endblock %}
