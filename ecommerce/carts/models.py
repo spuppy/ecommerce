@@ -3,7 +3,17 @@ from django.db import models
 from products.models import Product
 # Create your models here.
 
+class CartItem(models.Model):
+	product = models.ForeignKey(Product)
+	quantity = models.IntegerField(default=1)
+	timestamp = models.DateTimeField(auto_now_add=True,auto_now=False)
+	updated = models.DateTimeField(auto_now_add=False,auto_now=True)
+
+	def __unicode__(self):
+		return self.products.title
+
 class Cart(models.Model):
+	items = models.ManyToManyField(CartItem,null=True,blank=True)
 	products = models.ManyToManyField(Product, null=True,blank=True)
 	total = models.DecimalField(max_digits=100, decimal_places=2,default=0.00)
 	timestamp = models.DateTimeField(auto_now_add=True,auto_now=False)
@@ -12,6 +22,4 @@ class Cart(models.Model):
 
 	def __unicode__(self):
 		return "Cart id: %s" %(self.id)
-
-
 
