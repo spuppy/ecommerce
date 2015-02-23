@@ -29,12 +29,19 @@ def update_cart(request,slug):
 		qty = None
 		update_qty = False
 
-	try:
-		attr = request.GET.get('attr')
-	except:
-		attr = None
 
-	print attr
+	notes = {}
+	try:
+		color = request.GET.get('color')
+		notes['color'] = color
+	except:
+		color = None
+
+	try:
+		size = request.GET.get('size')
+		notes['size'] = size
+	except:
+		size = None
 
 	try:
 		the_id = request.session['cart_id']
@@ -64,11 +71,12 @@ def update_cart(request,slug):
 	# 	cart.items.remove(cart_item)
 
 	if update_qty and qty:
-		if int(qty) == 0:
+		if int(qty) <= 0:
 			cart_item.delete()
 
 		else:
 			cart_item.quantity = qty
+			cart_item.notes = notes
 			cart_item.save()
 	else:
 		pass
