@@ -36,11 +36,11 @@
 				<div class='col-sm-8 pull-left'>
 					<h3>{{ product.title }} 
 					
-					<!-- <a href='{% url "update_cart" product.slug %}?qty=12' class="pull-right">Add to cart</a> -->
+					
 					</h3>
 				</div>
 				<div class="col-sm-4 pull-right">
-					<form class="form" method='GET' action='{% url "update_cart" product.slug %}'>
+					<form class="form" method='POST' action='{% url "add_to_cart" product.slug %}'>{% csrf_token %}
 						<input class='btn btn-default btn-block' type='submit' value='Add to cart' />
 						<input class='form-control' name='qty' type='number' value='1' />
 						
@@ -49,7 +49,7 @@
 							{% if product.variation_set.sizes %}
 								<select class='form-control' name='size'>
 								{% for item in product.variation_set.sizes %}
-									<option value={{ item.title | lower}}>{{ item.title | capfirst}}</option>
+									<option value='{{ item.title | lower}}'>{{ item.title | capfirst}}</option>
 								{% endfor %}
 								</select>
 							{% endif %}
@@ -57,7 +57,7 @@
 							{% if product.variation_set.colors %}
 								<select class='form-control' name='color'>
 								{% for item in product.variation_set.colors %}
-									<option value={{ item.title | lower}}>{{ item.title | capfirst}}</option>
+									<option value='{{ item.title | lower}}'>{{ item.title | capfirst}}</option>
 								{% endfor %}
 								</select>
 							{% endif %}

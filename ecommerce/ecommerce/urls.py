@@ -10,7 +10,7 @@ urlpatterns = patterns('',
     # url(r'^blog/', include('blog.urls')),	
     url(r'^$', 'products.views.home', name='home'),
     url(r'^cart/$', 'carts.views.view', name='cart'),
-    url(r'^cart/(?P<slug>[\w-]+)/$', 'carts.views.update_cart', name='update_cart'),
+    url(r'^cart/(?P<slug>[\w-]+)/$', 'carts.views.add_to_cart', name='add_to_cart'),
     #see. temlate\cart\view.html
      url(r'^s/$', 'products.views.search', name='search'),
     url(r'^products/$', 'products.views.all', name='products'),
