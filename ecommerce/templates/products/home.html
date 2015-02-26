@@ -47,7 +47,19 @@
 	      			
 	      				{% for item in product.productimage_set.all %}
 						    {% if item.featured %}
-			      				<img class='image-responsive' src='{{ MEDIA_URL}}{{item.image}}' />
+						    	<a href='{{ product.get_absolute_url}}'>
+							    	<div style="
+							    		width:200px;
+							    		height:200px;
+							    		margin: 0 auto;">
+							    		<div class="background-img-thumb"
+										 style="background-image: url('{{ MEDIA_URL}}{{item.image}}');">
+										</div>
+							    		
+
+							    	</div>
+						    	</a>
+			      				<!-- <img class='image-responsive' src='{{ MEDIA_URL}}{{item.image}}' /> -->
 			      			{% endif %}
 			      		{% endfor %}
 
