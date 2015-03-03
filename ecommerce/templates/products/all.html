@@ -1,9 +1,78 @@
 {% extends 'base.html' %}
 
+
+
+{% load staticfiles %}
+
+{% block head_title %} 
+	Product || 
+{%endblock%}
+
+{% block styles %} 
+	
+	/* .jumbotron {color:#54a;} */
+{% endblock %}
+	
+
+{# Comment here #}
+
+
+
 {% block content %}
-<ul>
-	{% for item in products%}
-	<li>{{item.title}} {{item.price}}</li>
-	{% endfor %}
-</ul>
+<!-- Main component for a primary marketing message or call to action -->
+   
+
+      <div class="row">
+	     
+	      	<ul>
+	      	{% for product in products %}
+	      		<div class="col-sm-2">
+
+	      			<div class="thumbnail">
+
+	      			{% if product.productimage_set.all 	%}
+	      			
+	      				{% for item in product.productimage_set.all %}
+						    {% if item.featured %}
+						    	<a href='{{ product.get_absolute_url}}'>
+							    	<div style="width:100px;margin: 0 auto;">
+							    		<div class="background-img-thumb"
+										 style="height:100px;background-image: url('{{ MEDIA_URL}}{{item.image}}');">
+										</div>
+							    		
+
+							    	</div>
+						    	</a>
+			      				<!-- <img class='image-responsive' src='{{ MEDIA_URL}}{{item.image}}' /> -->
+			      			{% endif %}
+			      		{% endfor %}
+
+	      			{% else %}
+	      				<a href='{{ product.get_absolute_url}}'>
+							    	<div style="width:100px;margin: 0 auto;">
+							    		<div class="background-img-thumb"
+										 style="height:100px;">
+										</div>
+							    		
+
+							    	</div>
+						    	</a>
+	      			{% endif %}
+
+	      			 <div class="caption">
+				        <a href='{% url "single_product" product.slug %}'><h3>{{product.title}}</h3></a>
+				        <p> {{product.description | truncatewords:15}}</p>
+				        <p><a href='{% url "single_product" product.slug %}' class="btn btn-primary" role="button">View</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+				      </div>
+				    </div>
+
+	      			
+	      			
+	      		</div>
+	      		{% cycle "" "" "" "" "" "</div><br/><hr/><div class='row'>" %}
+
+	      	{% endfor %}
+	      	</ul>
+
+	  </div>
 {% endblock %}

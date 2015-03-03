@@ -1,0 +1,1281 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"V",
+				"VariationManager"
+			],
+			[
+				"e",
+				"except"
+			],
+			[
+				"emp",
+				"empty_message"
+			],
+			[
+				"em",
+				"empty_message"
+			],
+			[
+				"Produc",
+				"ProductImage"
+			],
+			[
+				"if",
+				"ifmain	if __name__ == '__main__'"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/Users/jugdei/Downloads/ha-lamp-course-files/halamp-follow-along/resources/haproxy.cfg",
+			"settings":
+			{
+				"buffer_size": 1075,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "ecommerce/carts/views.py",
+			"settings":
+			{
+				"buffer_size": 2161,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "ecommerce/carts/admin.py",
+			"settings":
+			{
+				"buffer_size": 230,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "ecommerce/products/models.py",
+			"settings":
+			{
+				"buffer_size": 2583,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "from django.contrib import admin\n\n# Register your models here.\nfrom .models import Product,ProductImage,Variation\n\nclass ProductAdmin(admin.ModelAdmin):\n	date_hierarchy = 'timestamp'\n	search_fields = ('title','description',)\n	list_display = ('title','price','active','updated')\n	list_editable = ('price','active',)\n	list_filter = ('price','active',)\n	readonly_fields = ('updated','timestamp',)\n	prepopulated_fields = {\"slug\": (\"title\",)}\n	class Meta:\n		model = Product\n\nadmin.site.register(Product, ProductAdmin)\nadmin.site.register(ProductImage)\nadmin.site.register(Variation)",
+			"file": "ecommerce/products/admin.py",
+			"file_size": 577,
+			"file_write_time": 130691543410000000,
+			"settings":
+			{
+				"buffer_size": 577,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "ecommerce/templates/cart/view.html",
+			"settings":
+			{
+				"buffer_size": 789,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "ecommerce/templates/products/single.html",
+			"settings":
+			{
+				"buffer_size": 2034,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "ecommerce/products/views.py",
+			"settings":
+			{
+				"buffer_size": 1090,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/jugdei/Downloads/ha-lamp-course-files/halamp-follow-along/resources/udp-localhost.conf",
+			"settings":
+			{
+				"buffer_size": 61,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "ecommerce/templates/base.html",
+			"settings":
+			{
+				"buffer_size": 2763,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "ecommerce/templates/products/home.html",
+			"settings":
+			{
+				"buffer_size": 2425,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "ecommerce/templates/products/results.html",
+			"settings":
+			{
+				"buffer_size": 1518,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "ecommerce/ecommerce/settings.py",
+			"settings":
+			{
+				"buffer_size": 2978,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "ecommerce/templates/navbar.html",
+			"settings":
+			{
+				"buffer_size": 1638,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "ecommerce/carts/models.py",
+			"settings":
+			{
+				"buffer_size": 1045,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/User/python3.sublime-build",
+	"command_palette":
+	{
+		"height": 47.0,
+		"selected_items":
+		[
+			[
+				"sidebar",
+				"View: Toggle Open Files in Side Bar"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"insatll",
+				"Package Control: Install Package"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"synta:vbs",
+				"Set Syntax: VBScript"
+			],
+			[
+				"pakcage control:install",
+				"Package Control: Install Package"
+			],
+			[
+				"package control",
+				"Package Control: Add Channel"
+			],
+			[
+				"copy",
+				"File: Copy as Tag a"
+			],
+			[
+				"case",
+				"Convert Case: Lower Case"
+			],
+			[
+				"title",
+				"Convert Case: Title Case"
+			],
+			[
+				"linter",
+				"Preferences: SublimeLint Settings – User"
+			],
+			[
+				"syntax: javas",
+				"Set Syntax: JavaScript (Rails)"
+			],
+			[
+				"open",
+				"File: Open In Browser - Production Server"
+			],
+			[
+				"syntax html",
+				"Set Syntax: HTML (Rails)"
+			],
+			[
+				"emmet",
+				"Set Syntax: Emmet"
+			],
+			[
+				"instlal",
+				"Package Control: Install Package"
+			],
+			[
+				"syntax: jaava",
+				"Set Syntax: JavaScript (Rails)"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"syntax: php",
+				"Set Syntax: PHP"
+			],
+			[
+				"mini",
+				"View: Toggle Minimap"
+			],
+			[
+				"side",
+				"View: Toggle Side Bar"
+			],
+			[
+				"systax:javasc",
+				"Set Syntax: JavaScript"
+			]
+		],
+		"width": 530.0
+	},
+	"console":
+	{
+		"height": 146.0,
+		"history":
+		[
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/jugdei/Desktop/Project/ecommerce/ecommerce"
+	],
+	"file_history":
+	[
+		"/Users/jugdei/Desktop/Project/ecommerce/ecommerce/manage.py",
+		"/Users/jugdei/Desktop/Project/ecommerce/ecommerce/products/migrations/0003_product_image.py",
+		"/Users/jugdei/Desktop/Project/ecommerce/ecommerce/products/migrations/0002_product_sale_price.py",
+		"/Users/jugdei/Desktop/Project/ecommerce/ecommerce/ecommerce/urls.py",
+		"/Users/jugdei/Desktop/Project/ecommerce/ecommerce/products/migrations/0005_productimage.py",
+		"/Users/jugdei/Desktop/Project/ecommerce/ecommerce/products/migrations/0004_remove_product_image.py",
+		"/Users/jugdei/Downloads/ha-lamp-course-files/halamp-follow-along/resources/wordpress.conf",
+		"/Users/jugdei/Desktop/Project/ecommerce/ecommerce/ecommerce/settings.py",
+		"/Users/jugdei/Desktop/Project/ecommerce/ecommerce/products/migrations/0007_variation.py",
+		"/Users/jugdei/Desktop/Project/ecommerce/ecommerce/carts/migrations/0005_cartitem_notes.py",
+		"/Users/jugdei/Desktop/Project/ecommerce/ecommerce/products/migrations/0006_auto_20150131_1851.py",
+		"/Users/jugdei/Desktop/Project/ecommerce/ecommerce/carts/tests.py",
+		"/Users/jugdei/Desktop/Project/ecommerce/ecommerce/products/admin.py",
+		"/Users/jugdei/Desktop/Project/ecommerce/ecommerce/products/views.py",
+		"/Users/jugdei/Desktop/Project/ecommerce/ecommerce/carts/migrations/0002_auto_20150220_1727.py",
+		"/Users/jugdei/Desktop/Project/ecommerce/ecommerce/carts/__init__.py",
+		"/Users/jugdei/Desktop/Project/ecommerce/ecommerce/templates/products/all.html",
+		"/Users/jugdei/Desktop/Project/ecommerce/ecommerce/products/models.py",
+		"/Users/jugdei/Desktop/Project/ecommerce/ecommerce/carts/models.py",
+		"/Users/jugdei/Desktop/Project/ecommerce/ecommerce/carts/views.py",
+		"/Users/jugdei/Desktop/Project/ecommerce/ecommerce/templates/cart/view.html",
+		"/Users/jugdei/Downloads/ha-lamp-course-files/halamp-scaling/resources/keepalived.conf.server01",
+		"/Users/jugdei/Downloads/ha-lamp-course-files/halamp-scaling/resources/keepalived.conf.server02",
+		"/Users/jugdei/Desktop/Project/ecommerce/ecommerce/templates/products/single.html",
+		"/Users/jugdei/Desktop/Project/ecommerce/ecommerce/carts/admin.py",
+		"/Users/jugdei/Desktop/Project/ecommerce/ecommerce/carts/migrations/0001_initial.py",
+		"/Users/jugdei/Desktop/Project/ecommerce/ecommerce/products/__init__.py",
+		"/Users/jugdei/Desktop/Project/ecommerce/ecommerce/templates/products/results.html",
+		"/Users/jugdei/Desktop/tmp01/moon_phases.py",
+		"/Users/jugdei/Downloads/ha-lamp-course-files/halamp-follow-along/resources/my.cnf.db01",
+		"/Users/jugdei/Desktop/Project/ecommerce/ecommerce/products/migrations/0001_initial.py",
+		"/Users/jugdei/Desktop/tmp01/tmp_01/haproxy-log-2015-01-31",
+		"/Users/jugdei/Desktop/tmp01/tmp_01/haproxy-log-2015-01-31-rev02",
+		"/Users/jugdei/Desktop/tmp01/tmp_01/haproxy-log-2015-02-01-rev02",
+		"/Users/jugdei/Desktop/tmp01/tmp_01/haproxy-log-2015-02-01",
+		"/Users/jugdei/Desktop/Project/ecommerce/ecommerce/products/templates/home.html",
+		"/Users/jugdei/Desktop/Project/ecommerce.sublime-project",
+		"/Users/jugdei/Desktop/Project/myproject",
+		"/Users/jugdei/Desktop/Project/untitled",
+		"/Users/jugdei/Desktop/my/sky-101.100.txt",
+		"/Users/jugdei/Desktop/my/sky-101.109.txt",
+		"/Users/jugdei/Downloads/ssl_mahidol.ac.th/mahidol.ac.th.key",
+		"/Users/jugdei/Downloads/mahidol_new_cert/mahidol.ac.th-g2.key",
+		"/Users/jugdei/Downloads/phpMyAdmin-4.2.7.1-english/js/jquery/src/jquery-ui/jquery.ui.menu.js",
+		"/Users/jugdei/Desktop/Works/01_max.py",
+		"/Users/jugdei/Desktop/Project/test.html",
+		"/Volumes/pcres/runme.bat",
+		"/Users/jugdei/Downloads/config",
+		"/Users/jugdei/Downloads/index",
+		"/Users/jugdei/Downloads/mahidol.ac.th-g2.key",
+		"/Users/jugdei/Downloads/mahidol_new_cert/mahidol.ac.th-g2.crt",
+		"/Users/jugdei/Desktop/Works/style.css",
+		"/Users/jugdei/Desktop/Works/search_and_replace.py",
+		"/Users/jugdei/Desktop/Works/index.html",
+		"/Users/jugdei/Desktop/Works/13_max_in_list.py",
+		"/Users/jugdei/Downloads/001D73262C6C_smb.txt",
+		"/Users/jugdei/Desktop/Works/palin.py",
+		"/Users/jugdei/Dropbox/myfiles/AD/Students/add_students_2.vbs",
+		"/Users/jugdei/Desktop/Works/07_reveral.py",
+		"/Users/jugdei/Desktop/Works/22_ROT13_test.py",
+		"/Users/jugdei/Dropbox/myfiles/AD/Students/add_students_1.vbs",
+		"/Users/jugdei/Desktop/Works/python_with_comma.py",
+		"/Users/jugdei/Desktop/Works/11 Backing Up/146011_11_01_XR15_backupinfo.mp4",
+		"/Users/jugdei/Desktop/Works/16_palindrome_phase.py",
+		"/Users/jugdei/Downloads/check_win_cpuload",
+		"/Users/jugdei/Dropbox/myfiles/AD/add_use_2.vbs",
+		"/Users/jugdei/Library/Containers/com.apple.mail/Data/Library/Mail Downloads/D658C54E-C32B-4A78-A639-2F6055D0CB21/mahidol.ac.th/mahidol.ac.th.crt",
+		"/Users/jugdei/Desktop/Works/test.py",
+		"/Users/jugdei/Desktop/Works/test2.py",
+		"/Users/jugdei/Desktop/Works/02_max_of_three.py",
+		"/Users/jugdei/Desktop/Works/06_multiply.py",
+		"/Users/jugdei/Desktop/Works/03_length.py",
+		"/Users/jugdei/Downloads/it_muic_mahidol_ac_th/it_muic_mahidol_ac_th.ca-bundle",
+		"/Users/jugdei/Downloads/it_muic_mahidol_ac_th/it_muic_mahidol_ac_th.crt",
+		"/Users/jugdei/Library/Application Support/Sublime Text 3/Packages/User/python3.sublime-build",
+		"/Users/jugdei/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/jugdei/Desktop/Works/test3.js",
+		"/Users/jugdei/Desktop/Works/test4.js",
+		"/Users/jugdei/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/jugdei/Library/Application Support/Sublime Text 3/Packages/User/SublimeLint.sublime-settings",
+		"/Users/jugdei/Desktop/Works/boilerplate/testfile.html",
+		"/Users/jugdei/Library/Application Support/Sublime Text 3/Packages/SideBarEnhancements/CHANGELOG",
+		"/Users/jugdei/Desktop/Works/testphp.php",
+		"/Users/jugdei/Desktop/Works/test2.js",
+		"/Users/jugdei/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/jugdei/Library/Application Support/Sublime Text 3/Packages/Default/Default (OSX).sublime-keymap",
+		"/Users/jugdei/Library/Application Support/Sublime Text 3/Packages/User/test.js",
+		"/Users/jugdei/Desktop/Python/Python 3 Essential Training/Lynda - Python 3 Essential Training/Exercise Files/Ex_Files_Python_3_EssT/Exercise Files/19 Projects/lib/bwDB.py",
+		"/Users/jugdei/Documents/testpython.py"
+	],
+	"find":
+	{
+		"height": 40.0
+	},
+	"find_in_files":
+	{
+		"height": 108.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"static",
+			"product",
+			"cart_item",
+			"item",
+			"update_cart",
+			"add_to_cart",
+			"update",
+			"variation",
+			"ProductImage",
+			"attr",
+			"=''",
+			"id",
+			"125.26.191.161",
+			"nav",
+			"product",
+			"443",
+			"net.core.somaxconn",
+			"ou=student",
+			"222",
+			"list",
+			"sysname",
+			"platform",
+			"what",
+			"\n",
+			"what",
+			"namespace",
+			"h2",
+			"What Is A Namespace",
+			"<H2>WHAT IS A NAMESPACE</H2>",
+			"<h2>What Is A Namespace</h2>",
+			"d",
+			"<h2>What Is A Namespace</h2>",
+			"namespace",
+			"main",
+			"ttest",
+			"art",
+			"...\n",
+			"the",
+			"name",
+			"the",
+			"path",
+			"app",
+			"path",
+			"$path",
+			"20",
+			"vmware"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"ou=new_student",
+			"p"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 10,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/Users/jugdei/Downloads/ha-lamp-course-files/halamp-follow-along/resources/haproxy.cfg",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1075,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								770,
+								770
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 14,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "ecommerce/carts/views.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2161,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1041,
+								1041
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "ecommerce/carts/admin.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 230,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								229,
+								229
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 13,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "ecommerce/products/models.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2583,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								867,
+								867
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 280.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "ecommerce/products/admin.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 577,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								576,
+								576
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "ecommerce/templates/cart/view.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 789,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								789,
+								789
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 537.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "ecommerce/templates/products/single.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2034,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1782,
+								1782
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "ecommerce/products/views.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1090,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								501,
+								501
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "/Users/jugdei/Downloads/ha-lamp-course-files/halamp-follow-along/resources/udp-localhost.conf",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 61,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "ecommerce/templates/base.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2763,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1151,
+								1211
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 673.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "ecommerce/templates/products/home.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2425,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								823,
+								823
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 409.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "ecommerce/templates/products/results.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1518,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1315,
+								1315
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "ecommerce/ecommerce/settings.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2978,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								655,
+								655
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2114.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "ecommerce/templates/navbar.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1638,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								809,
+								809
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 76.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "ecommerce/carts/models.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1045,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								730,
+								730
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 32.0
+	},
+	"input":
+	{
+		"height": 40.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 220.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "eccomerce.sublime-project",
+	"replace":
+	{
+		"height": 60.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"view",
+				"products/views.py"
+			],
+			[
+				"nav",
+				"templates/navbar.html"
+			],
+			[
+				"setting",
+				"ecommerce/settings.py"
+			],
+			[
+				"resu",
+				"templates/products/results.html"
+			],
+			[
+				"home",
+				"templates/products/home.html"
+			],
+			[
+				"",
+				"templates/products/results.html"
+			],
+			[
+				"result",
+				"templates/products/results.html"
+			],
+			[
+				"resut",
+				"templates/products/results.html"
+			],
+			[
+				"base",
+				"templates/base.html"
+			],
+			[
+				"base.htm",
+				"templates/base.html"
+			],
+			[
+				"res",
+				"templates/products/results.html"
+			],
+			[
+				"home.",
+				"templates/products/home.html"
+			],
+			[
+				"rest",
+				"templates/products/results.html"
+			],
+			[
+				"produmodel",
+				"products/models.py"
+			],
+			[
+				"modle",
+				"products/models.py"
+			],
+			[
+				"re",
+				"templates/products/results.html"
+			],
+			[
+				"prodmod",
+				"products/models.py"
+			],
+			[
+				"prodres",
+				"templates/products/results.html"
+			],
+			[
+				"productmodel",
+				"products/models.py"
+			],
+			[
+				"producthome",
+				"templates/products/home.html"
+			],
+			[
+				"url",
+				"ecommerce/urls.py"
+			],
+			[
+				"cartview",
+				"carts/views.py"
+			],
+			[
+				"carthtml",
+				"templates/cart/view.html"
+			],
+			[
+				"single",
+				"templates/products/single.html"
+			],
+			[
+				"cartmodel",
+				"carts/models.py"
+			],
+			[
+				"product",
+				"products/views.py"
+			],
+			[
+				"cartviewhtml",
+				"templates/cart/view.html"
+			],
+			[
+				"cartvie",
+				"carts/views.py"
+			],
+			[
+				"productview",
+				"products/views.py"
+			],
+			[
+				"view.html",
+				"templates/cart/view.html"
+			],
+			[
+				"cartmo",
+				"carts/models.py"
+			],
+			[
+				"cart",
+				"carts/views.py"
+			],
+			[
+				"cartmod",
+				"carts/models.py"
+			],
+			[
+				"productmod",
+				"products/models.py"
+			],
+			[
+				"signle",
+				"templates/products/single.html"
+			],
+			[
+				"cartvi",
+				"carts/views.py"
+			],
+			[
+				"productv",
+				"products/views.py"
+			],
+			[
+				"cartv",
+				"carts/views.py"
+			],
+			[
+				"produview",
+				"products/views.py"
+			],
+			[
+				"prodsing",
+				"templates/products/single.html"
+			],
+			[
+				"produsing",
+				"templates/products/single.html"
+			],
+			[
+				"producmod",
+				"products/models.py"
+			],
+			[
+				"productsingle",
+				"templates/products/single.html"
+			],
+			[
+				"prodmodel",
+				"products/models.py"
+			],
+			[
+				"productsing",
+				"templates/products/single.html"
+			],
+			[
+				"prdadmin",
+				"products/admin.py"
+			],
+			[
+				"singl",
+				"templates/products/single.html"
+			],
+			[
+				"sing",
+				"templates/products/single.html"
+			],
+			[
+				"productsinge",
+				"templates/products/single.html"
+			],
+			[
+				"cartvew",
+				"carts/views.py"
+			],
+			[
+				"cartmode",
+				"carts/models.py"
+			],
+			[
+				"sett",
+				"ecommerce/settings.py"
+			],
+			[
+				"temp",
+				"templates/cart/view.html"
+			],
+			[
+				"tem",
+				"templates/cart/view.html"
+			],
+			[
+				"cartte",
+				"templates/cart/view.html"
+			],
+			[
+				"mod",
+				"carts/models.py"
+			],
+			[
+				"settin",
+				"ecommerce/settings.py"
+			],
+			[
+				"navbar",
+				"templates/navbar.html"
+			],
+			[
+				"prod",
+				"templates/products/single.html"
+			],
+			[
+				"singel",
+				"templates/products/single.html"
+			],
+			[
+				"cartview.html",
+				"templates/cart/view.html"
+			],
+			[
+				"cartsview",
+				"carts/views.py"
+			],
+			[
+				"cartsadmin",
+				"carts/admin.py"
+			],
+			[
+				"productmode",
+				"products/models.py"
+			],
+			[
+				"sin",
+				"templates/products/single.html"
+			],
+			[
+				"navb",
+				"templates/navbar.html"
+			],
+			[
+				"hom",
+				"templates/products/home.html"
+			],
+			[
+				"vie",
+				"products/views.py"
+			],
+			[
+				"hom.e",
+				"templates/products/home.html"
+			],
+			[
+				"model",
+				"products/models.py"
+			],
+			[
+				"v",
+				"products/views.py"
+			],
+			[
+				"ho",
+				"templates/products/home.html"
+			],
+			[
+				"all",
+				"templates/products/all.html"
+			],
+			[
+				"package",
+				"Package Control Messages"
+			],
+			[
+				"test.p",
+				"test.py"
+			],
+			[
+				"sytle.css",
+				"style.css"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 265.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
