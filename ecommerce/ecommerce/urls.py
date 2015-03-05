@@ -18,6 +18,7 @@ urlpatterns = patterns('',
     url(r'^s/$', 'products.views.search', name='search'),
     url(r'^products/$', 'products.views.all', name='products'),
     url(r'^products/(?P<slug>[\w-]+)/$', 'products.views.single', name='single_product'),
+    url(r'^orders/$', 'orders.views.order', name='user_orders'),
     #Note \d+ == only digit
 
     #url(r'^products/(?P<slug>.*)/$', 'products.views.single', name='single_product'),

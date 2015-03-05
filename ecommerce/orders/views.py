@@ -5,6 +5,14 @@ from django.core.urlresolvers import reverse
 from carts.models import Cart
 # Create your views here.
 from .models import Order
+from .utils import id_generator
+
+def order(request):
+
+	context = {}
+	template = 'orders/user.html'
+	return render(request,template,context)
+
 def checkout(request):
 	
 	try:
@@ -16,9 +24,12 @@ def checkout(request):
 		return HttpResponseRedirect(reverse("cart"))	
 
 	new_order,created = Order.objects.get_or_create(cart=cart)
+
 	if created:
-		new_order.order_id = str(time.time())
+		new_order.order_id =  id_generator() #str(time.time())
 		new_order.save()
+	new_order.user = request.user
+	new_order.save()
 
 	if new_order.status == "Finished":
 		del request.session['cart_id']
