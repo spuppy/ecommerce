@@ -7,12 +7,16 @@ from carts.models import Cart
 from .models import Order
 from .utils import id_generator
 
+from django.contrib.auth.decorators import login_required
+
 def order(request):
 
 	context = {}
 	template = 'orders/user.html'
 	return render(request,template,context)
 
+
+@login_required
 def checkout(request):
 	
 	try:
@@ -23,8 +27,21 @@ def checkout(request):
 		the_id = None
 		return HttpResponseRedirect(reverse("cart"))	
 
-	new_order,created = Order.objects.get_or_create(cart=cart)
+	try:
+		new_order = Order.objects.get(cart=cart)
+	except Order.DoesNotExist:
+		new_order = Order(cart=cart)
+		new_order.user = request.user
+		new_order.order_id = id_generator()
+		new_order.save()
+	except:
+		return HttpResponseRedirect(reverse("cart"))			
 
+	new_order,created = Order.objects.get_or_create(cart=cart)
+	### ^  returns a tuple of the two values
+
+
+	## Really need these lines ???
 	if created:
 		new_order.order_id =  id_generator() #str(time.time())
 		new_order.save()

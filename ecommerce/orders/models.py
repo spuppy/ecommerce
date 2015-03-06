@@ -8,7 +8,7 @@ from django.conf import settings
 from carts.models import Cart
 
 #Important!!!
-#Replace for 
+#Replacement for 
 # User = get_user_model()
 
 User = settings.AUTH_USER_MODEL
